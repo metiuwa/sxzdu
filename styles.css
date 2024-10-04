@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #111111;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-section .container {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.headline {
+    color: #f39c12; 
+
+    font-size: 4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: #aaa;
+}
+
+.highlight {
+    color: #f39c12;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #f39c12; 
+    color: #000; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background-color 0.3s ease;
+    margin-top: 50px; 
+
+}
+
+.btn-primary:hover {
+    background-color: #e67e22; 
+}
+
+.audereus {
+    color: #f39c12;
+
+    position: absolute;
+    bottom: 20px;
+    animation: bounce 2s infinite;
+    font-size: 1.2rem;
+}
+
+.music-section, .video-section, .contact-section, .subscribe-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+.music-section a {
+    color: rgb(122, 122, 122); 
+    text-decoration: none; 
+}
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #f39c12;
+}
+
+.music-gallery, .video-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.album, iframe {
+    width: 300px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.album:hover {
+    transform: scale(1.1);
+}
+
+.metiuw{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    background: #262626 -webkit-gradient(linear, left top, right top, from(#262626), to(#262626), color-stop(0.5, #fff))  0 0 no-repeat;
+    -webkit-background-size: 150px;
+    background-size: 150px;
+    color: rgba(255, 255, 255, 0.1);
+    -webkit-background-clip: text;
+    animation: animate 5s infinite;
+    font-size: 60px;
+    
+    position: relative;
+    z-index: 0;
+}
+
+@keyframes animate{
+    0%, 10%{
+        background-position: top left;
+    }
+    20%{
+        background-position: top left;
+    }
+
+    
+    90%{
+        background-position: top right;
+    }
+   
+    
+    100%{
+        background-position: top left;
+    }
+}
+
+
+.subscribe-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #444;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 20%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #333;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.contact-form button {
+    width: 10%;
+    padding: 10px;
+    background-color: #f39c12;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e67e22;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #000000; 
+    color: #aaa; 
+}
+
+.footer a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+
+
+@media (max-width: 768px) {
+    .btn-primary {
+        min-width: 150px; /* Minimum genişlik ayarını koruyun */
+        height: 50px; /* Yüksekliği koruyun */
+        font-size: 16px; /* Yazı boyutunu koruyun */
+    }
+}
+
+@media (max-width: 768px) {
+    .mc-embedded-subscribe-form {
+        min-width: 150px; /* Minimum genişlik ayarını koruyun */
+        height: 50px; /* Yüksekliği koruyun */
+        font-size: 16px; /* Yazı boyutunu koruyun */
+    }
+}
+
